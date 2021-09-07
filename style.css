@@ -1,24 +1,25 @@
 *, *:before, *:after {
-    /* -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box; */
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
     
   }
   header {
     text-align: center;
     background-color:darkcyan ;
+    padding-bottom: 1px;
   }
 
   #header {
     background-color: white;
-    box-sizing: unset;
+    box-sizing: border-box;
+    text-align: center;
+    line-height: 20px;
     margin: 10px 0 10px 0;
     padding-top: 10px;
+    border-bottom: 6px double darkcyan;
   }
 
-  #info {
-    padding: 10px 0 10px 0;
-  }
   h1 {
     margin: 0px 0 20px 0;
     padding-top: 20px;
@@ -26,10 +27,14 @@
     color: white;
     font-size: 23px;
   }
-
   h2 {
-    font-size: 22px;
+    font-size: 21px;
+  }
+
+  legend {
+    font-size: 21px;
     margin-bottom: 10px;
+    font-weight: 800 ;
   }
 
   body {
@@ -39,11 +44,14 @@
   }
   
   #fieldset1 {
-    border-top: 6px double darkcyan;
+    margin-top: 30px;
+    border-bottom: 2px solid darkcyan;
   }
 
   p {
     color: #8a97a0;
+    text-align: center;
+    font-size: 16px;
   }
 
   form {
@@ -77,6 +85,8 @@
   :focus {
     outline: 3px solid seagreen;
     border-radius: 5px;
+    transition: 0.28s;
+    
   }
   
   input[placeholder] {
@@ -104,7 +114,7 @@
   }
 
   #fieldset2 {
-    border-top: 2px solid darkcyan;
+    /* border-top: 2px solid darkcyan; */
     box-sizing: unset;
   }
   #fieldset2::first-line {
